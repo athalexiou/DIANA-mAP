@@ -5,7 +5,7 @@ DIANA-mAP is an automated microRNA analysis pipeline with an emphasis on pre-pro
 
 ### DOCKER
 
-DIANA-mAP is available as a Docker image in the public repository of Docker Hub under the name of athalexiou/diana_map. Inside the image all the scripts are available, along with the human GRCh38 reference genome, the v21 and v22 of the miRBase hairpin and mature known miRNAs and finally 4 test sample datasets allowing for a test run upon loading the image on a container. This is the recommended way of running this tool, as there is no need for any complex dependency installations.
+DIANA-mAP is available as a Docker image in the public repository of Docker Hub under the name of _**athalexiou/diana_map**_. Inside the image all the scripts are available, along with the human GRCh38 reference genome, the v21 and v22 of the miRBase hairpin and mature known miRNAs and finally 4 test sample datasets allowing for a test run upon loading the image on a container. This is the recommended way of running this tool, as there is no need for any complex dependency installations.
 
 Through the volume option of Docker (-v flag explained below), it is easy to provide the data to be analyzed by DIANA-mAP and the results to be accessible and/or stored locally outside of the container. Please do note that any results not transfered outside of the container will be lost upon exit.
 
