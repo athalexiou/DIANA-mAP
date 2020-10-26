@@ -274,5 +274,5 @@ Options:
 
 ## KNOWN ISSUES
 
-- **"dnapi.py: error: [Errno 28] No space left on device"**
-When running multiple sample in parallel, sometimes python gets overloaded and crashes providing the error above. Please run the analysis on failed samples again and consider setting the number_of_cores parameter of diana_map_multi.r to 5 or less when large samples (5 million reads or more) exist in your analysis.
+- `dnapi.py: error: [Errno 28] No space left on device`
+>When running multiple sample in parallel, sometimes python gets overloaded and crashes providing the error above. Please run the analysis on failed samples again and consider setting the number_of_cores parameter of diana_map_multi.r to 5 or less when large samples (5 million reads or more) exist in your analysis.
