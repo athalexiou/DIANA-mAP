@@ -84,7 +84,10 @@ For Red Hat, CentOS, and Fedora systems substitute all the "apt-get" with "yum" 
 14. **Download the known miRNAs from miRBase**		(tested with miRBase v20,21,22)
     - visit the miRBase website and download the hairpin and mature sequences
 
-
+15. **Adjust the path variables in the Configuration file**
+    - Inside the "diana_map_config.r" file adjust the path variables with the proper locations on your machine for: FastQC, DNApi, Cutadapt, mirDeep2 (and its aligner executable), the known_adapter_library.fa file, your indexed reference genome, the miRBase hairpin and mature fasta files.
+    - Make sure that the path to mirDeep2/essentials folder is in your path variable.
+    - If needed for downloading samples from SRA, adjust the path to your sratoolkit folder inside the "diana_map_downloader.r" file.
 
 
 
