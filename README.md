@@ -179,7 +179,7 @@ Options:
 
 	-b PATH, --adapter_library=PATH
 		The position of the adapter library fasta file. 
-		File path. (default = '/mnt/raid1/NGS_Data/adapter_listing_uniq.fa')
+		File path. (default = '')
 
 	-t NUMBER, --adapter_identity_threshold=NUMBER
 		The minimum percentage of identity required for a match 
@@ -203,7 +203,7 @@ Options:
 
 	-g PATH, --path_ref_genome_prefix=PATH
 		The indexed reference genome directory plus the prefix. 
-		Text. (default = '/Path/to/Indexed/Genome/Genome_prefix')
+		Text. (default = '')
 
 	-i BOOLEAN, --large_index=BOOLEAN
 		Set TRUE if the genome index ends in '.ebwtl',
@@ -217,11 +217,11 @@ Options:
 
 	-n PATH, --path_to_hairpin=PATH
 		The miRBase hairpin miRNAs file location. 
-		Text. (default = '/mnt/raid1/NGS_Data/miRNAs/hairpin_v21.fa')
+		Text. (default = '')
 
 	-u PATH, --path_to_mature=PATH
 		The miRBase mature miRNAs file location. 
-		Text. (default = '/mnt/raid1/NGS_Data/miRNAs/mature_v21.fa')
+		Text. (default = '')
 
 	-c PATH, --user_config=PATH
 		A configuration file provided by the user. 
