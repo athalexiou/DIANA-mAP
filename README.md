@@ -272,8 +272,14 @@ Options:
 **Example:**
 `Rscript diana_map_multi.r -d /home/DIANA_mAP/example_DE_conditions_table.csv /home/test_data/ /home/test_results/ 4 "-l 16 -e 'experiment_1'"`
 
-
-
+## Results
+The results are organized into folders for each sample using the input file name, any value provided in the '-e' parameter (DIANA-mAP script) and the timestamp. Upon the successful completion of the analysis each sample folder contains:
+  - A **Counts.txt result file** containing per known miRNA the raw quantified reads and the normalized quantified reads (RPM)
+  - A **Final_Report.txt file** containing a summary of the analysis statistics
+  - A **Pie chart** showing the distribution of reads after the pre-processing step of the analysis
+  - Two **Sequence Length Distribution graphs**, one before and one after the pre-processing step
+  - A **QC folder** containing the FastQC output files depicting the sample quality before and after pre-processing
+  - An **Intermediate Results folder** produced during the various analysis steps
 
 ## KNOWN ISSUES
 
