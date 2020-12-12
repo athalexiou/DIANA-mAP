@@ -123,6 +123,7 @@ if (exists("difexpression")) {
   result = result[complete.cases(result),] # Remove any rows with NA
   
   ## Write the full results
+  write.table(counts(dds, normalized=TRUE), file="DE_normalized_counts.txt", sep="\t", quote=F, col.names=NA)
   write.csv(as.data.frame(result),file = "DE_full_results.csv")
   writeLines(c("\t\t\t\tDIFFERENTIAL EXPRESSION REPORT\n\n","\t\t\tSUMMARY:"),"DE_report.txt")
   capture.output(summary(result),file = "DE_report.txt", append = TRUE)
