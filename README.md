@@ -11,6 +11,7 @@ Through the volume option of Docker (-v flag explained below), it is easy to pro
 
 
 1. **Follow the installation instructions on the docker website to install docker on your machine.**
+	- If you are a user in an HPC or cluster and do not have root access, ask the IT administrator to install Docker for you and to follow [this guide](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) in order to allow your user to run Docker commands without the need for root access or sudo.
 
 2. **Start a container using the DIANA_mAP image from Docker Hub.**
     1. Provide a directory in your local machine to connect with the container in the flag -v of the command below. By doing that, you will be able to transfer data in or out of the container through the directory "/home/my-data/" inside the container.
