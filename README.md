@@ -1,6 +1,9 @@
 # DIANA-mAP
 DIANA-mAP is an automated microRNA analysis pipeline with an emphasis on pre-processing.
 
+The tool is free to use under MIT licence, please cite:
+>Alexiou, A.; Zisis, D.; Kavakiotis, I.; Miliotis, M.; Koussounadis, A.; Karagkouni, D.; Hatzigeorgiou, A.G. DIANA-mAP: Analyzing miRNA from Raw NGS Data to Quantification. Genes 2021, 12, 46. (DOI: [10.3390/genes12010046](https://doi.org/10.3390/genes12010046))
+
 ## INSTALLATION
 
 ### DOCKER
