@@ -17,7 +17,7 @@ Through the volume option of Docker (-v flag explained below), it is easy to pro
 	- If you are a user in an HPC or cluster and do not have root access, ask the IT administrator to install Docker for you and to follow [this guide](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) in order to allow your user to run Docker commands without the need for root access or sudo.
 
 2. **Start a container using the DIANA_mAP image from Docker Hub.**
-    1. Provide a directory in your local machine to connect with the container in the flag -v of the command below. By doing that, you will be able to transfer data in or out of the container through the directory "/home/my-data/" inside the container.
+    1. Provide a directory in your local machine to connect with the container in the flag -v of the command below by changing the "/local/directory/to/connect/to/container/" with the local directory of your choosing. By doing that, you will be able to transfer data in or out of the container through the directory "/home/my-data/" inside the container.
          - `docker run -it --name diana_map_container -v /local/directory/to/connect/to/container/:/home/my-data/ -w="/home/DIANA_mAP/" --entrypoint "/home/init.sh" athalexiou/diana_map:v1.0 /bin/bash`
     2. The above command with start the container and position your terminal into the "DIANA_mAP" folder, where all the DIANA_mAP scripts are.
     3. To test the pipeline, the following command will perform an analysis on the 4 test samples provided in the image. Please provide the desired output directory and the number of cores to use in the following command:
