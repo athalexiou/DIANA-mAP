@@ -25,7 +25,7 @@ Through the volume option of Docker (-v flag explained below), it is easy to pro
          - `docker run -it --name diana_map_container -v /local/directory/to/connect/to/container/:/home/my-data/ -w="/home/DIANA_mAP/" --entrypoint "/home/init.sh" athalexiou/diana_map:v1.0 /bin/bash`
     2. The above command with start the container and position your terminal into the "DIANA_mAP" folder, where all the DIANA_mAP scripts are.
     3. To test the pipeline, the following command will perform an analysis on the 4 test samples provided in the image. Please provide the desired output directory and the number of cores to use in the following command:
-        - `Rscript diana_map_multi.r -d /home/DIANA_mAP/example_DE_conditions_table.csv /home/test_data/ /path/to/output/directory/ number_of_cores ""`
+        - `Rscript diana_map_multi.r -d /home/DIANA_mAP/example_DE_conditions_table.csv /home/test_data/ /path/to/output/directory/ {number_of_cores} ""`
 
 
 ### STANDALONE
