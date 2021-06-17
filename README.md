@@ -6,6 +6,8 @@ The tool is free to use under MIT licence, please cite:
 
 DIANA-mAP was funded by “ELIXIR-GR: The Greek Research Infrastructure for Data Management and Analysis in Life Sciences” (MIS 5002780) which is implemented under the Action “Reinforcement of the Research and Innovation Infrastructure”, funded by the Operational Programme “Competitiveness, Entrepreneurship and Innovation” (NSRF 2014-2020) and co-financed by Greece and the European Union (European Regional Development Fund)
 
+![Pipeline Overview](DIANA-mAP_overview.png)
+
 ## INSTALLATION
 
 ### DOCKER
