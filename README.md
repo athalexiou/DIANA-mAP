@@ -1,5 +1,6 @@
 # DIANA-mAP
-DIANA-mAP is an automated microRNA analysis pipeline with an emphasis on pre-processing.
+DIANA-microRNA-Analysis-Pipeline (DIANA-mAP) is a fully automated computational pipeline that allows the user to perform miRNA NGS data analysis from raw sRNA-Seq libraries to quantification and Differential Expression Analysis in an easy, scalable, efficient, and intuitive way.
+Emphasis has been given to data pre-processing, an early, critical step in the analysis for the robustness of the final results and conclusions. Through modularity, parallelizability and customization, DIANA-mAP produces high quality expression results, reports and graphs for downstream data mining and statistical analysis.
 
 The tool is free to use under MIT licence, please cite:
 >Alexiou, A.; Zisis, D.; Kavakiotis, I.; Miliotis, M.; Koussounadis, A.; Karagkouni, D.; Hatzigeorgiou, A.G. DIANA-mAP: Analyzing miRNA from Raw NGS Data to Quantification. Genes 2021, 12, 46. (DOI: [10.3390/genes12010046](https://doi.org/10.3390/genes12010046))
