@@ -87,7 +87,7 @@ For Red Hat, CentOS, and Fedora systems substitute all the "apt-get" with "yum" 
 12. **Install SRAtoolkit** (for downloader script, tested with v2.9.6)
     - Download and unzip into the directory of choice
 
-13. **Acquire a reference Genome**		(tested predominatly with human genome GRCh37 and GRCh38)
+13. **Acquire a reference Genome**		(tested predominantly with human genome GRCh37 and GRCh38)
     - Download the reference genome to the directory of choice
     - Use the bowtie tool from miRDeep2/essentials to create an index for your genome
     - `/path/to/miRDeep2/essentials/bowtie-1.1.1/bowtie-build reference_genome outfile_base`	(for more info please visit the bowtie 1.x manual)
