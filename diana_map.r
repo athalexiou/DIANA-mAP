@@ -234,12 +234,13 @@ if (preprocess) {
   }
   
   
-  if (adapter_exists) {
+  if (adapter_exists && !grepl("RAW_INPUT",adapter)) {
     untrimmed_output = paste0(" --untrimmed-output reads_without_adapter.fq")
     trim_adapter_input = paste0(" -",adapter_type," ",adapter," -O ",trim_min_adapter_overlap," -e ",trim_max_err_rate,untrimmed_output)
   }else {
     cat(">> NOTICE: Your data seem to be already processed, adapter removal will be omitted.\n")
     trim_adapter_input = ""
+    adapter_exists = FALSE
   }
   system(paste0(path_cutadapt, "cutadapt -q ",trim_quality,trim_adapter_input," -m ",trim_min_len," -M ",trim_max_len," -o ",input_file_name,"_trimmed.fq ",file_in," > ",input_file_name,"_trimming_report.txt"))
   
